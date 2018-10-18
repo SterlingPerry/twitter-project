@@ -1,0 +1,77 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.appHeader{
+    height: 23px;
+}
+
+#tweet-btn{
+    height: 34px;
+    margin-top: 10px;
+    padding-top: 3px;
+    border-radius: 30px;
+}
+
+.coverImg{
+    width: 100%;
+    height: 320px;
+    background-image: url(http://www.twitrcovers.com/wp-content/uploads/2012/09/clouds-nature.jpg); 
+    background-size: cover;
+    background-position: middle;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.followers{
+    height: 25px;
+    background: #fff;
+}
+
+.profilePic{
+    margin-top:-120px;
+    margin-left: 100px;
+    border-radius: 50%;
+    border: 4px solid #007bff;
+
+}
+
+.profile-sm{
+
+}
+
+.main{
+    background: #e6ecf0;
+    margin-top: -35px;
+    height: 100%;
+}
+
+.left-card{
+    margin-top: 50px;
+}
+
+.middle{
+    margin-top: 50px;
+    height: 100%;
+    width: 120px;
+    /* margin-right: 15px; */
+}
+
+.card-body{
+    padding: 5px 5px 5px 5px;
+    height: 100%;
+}
+
+.right-card{
+    margin-top: 50px;
+    height: 180px;
+    padding-top: 10px;
+}
+
+#signupbtn{
+    border-radius: 30px;
+}

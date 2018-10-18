@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+  
+    <title>my twitter app</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <nav class="col navbar navbar-expand-sm">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-home"></i>&nbsp;Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-bolt"></i>&nbsp;Moments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-bell"></i>&nbsp;Notifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-envelope"></i>&nbsp;Messages</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="logo col navbar-brand" href="#"><i class="fab fa-twitter"></i>
+                </a>
+                <button type="button" id="tweet-btn" class="appHeader btn btn-primary" data-toggle="modal" data-target="#myModal">Tweet</button>
+            </div>
+    </header>
+    <section class="coverImg bg-primary"></section>
+    <section class="followers"></section>
+
+    <img src="img/profile.jpg" height="200px" width="200px" class="profilePic">
+
+    <div class="main container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="left-card col-3">
+                    <h3>Sterling Perry</h3>
+                    <p>@codekings</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti illum voluptate velit
+                        voluptatibus. Aspernatur cumque maxime doloribus neque, labore reiciendis. Tempora vel maxime
+                        nesciunt consectetur!</p>
+                </div>
+                <div class="middle col-6">
+                    <div class="tweet card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-1">
+                                    <img src="img/profile.jpg" class="profile-sm" height="48px" width="48px" />
+                                </div>
+                                <div class="col-sm-11">
+                                    <div class="row">
+                                        <h6 class="profileName col-4">Sterling Perry</h6>
+                                        <p class="profileHandle col-4">@codekings</p>
+                                        <p class="tweetDate col-4">Oct 13</p>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                                        voluptate at tempora perspiciatis, eveniet exercitationem esse.</p>
+
+                                </div>
+                            </div>
+                            <img src="https://media.giphy.com/media/1gXJRVDwk5VTOvootN/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+                <div class="right-card col-3 card">
+                        <h3>New to Twitter</h3>
+                        <p>Sign up now to get your own personalized timeline!</p>
+                        <button type="button" id="signupbtn" class="btn btn-primary">Sign up</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header hide">
+                    <h4 class="modal-title">Compose New Tweet</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <textarea id="tweetBody" placeholder="What's Happening.." class="form-control"></textarea>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" id="postTweet" class="btn btn-primary" data-dismiss="modal">tweet</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+<!-- ADD SCRIPTS HERE -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+<script src = "app.js"></script>
+</body>
+
+</html>
