@@ -12,5 +12,13 @@
   "dependencies": {
     "express": "^4.16.4",
     "mongoose": "^5.3.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SterlingPerry/twitter-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SterlingPerry/twitter-project/issues"
+  },
+  "homepage": "https://github.com/SterlingPerry/twitter-project#readme"
 }
