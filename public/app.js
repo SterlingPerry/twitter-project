@@ -59,3 +59,7 @@ $.get('/api/tweets')
             $('.charCount').html(text_remaining + ' characters remaining');
         });
     });
+
+    $('#postTweet').on('click', function(){
+        $(this).find('textarea')[0].reset();
+    });
