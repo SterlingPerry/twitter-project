@@ -60,6 +60,6 @@ $.get('/api/tweets')
         });
     });
 
-    $('#postTweet').on('click', function(){
-        $(this).find('textarea')[0].reset();
+    $('.modal').on('hidden.bs.modal', function(){
+        $(this).find('form')[0].reset();
     });
