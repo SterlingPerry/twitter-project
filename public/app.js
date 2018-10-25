@@ -10,8 +10,7 @@ const saveTweet = function (event) {
 
     $.post('/api/tweet', data)
         .then(function (responseData) {
-            console.log(responseData);
-            render(responseData.tweet);
+             render(responseData.tweet);
         })
 }
 
@@ -44,7 +43,6 @@ const render = function(tweetText){
 
 $.get('/api/tweets')
     .then(function(serverData){
-        console.log(serverData);
         for (let i = 0; i < serverData.length; i++){
             render(serverData[i].tweet);
         }
@@ -61,29 +59,3 @@ $.get('/api/tweets')
             $('.charCount').html(text_remaining + ' characters remaining');
         });
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const showModal = function(event){
-//     event.preventDefault();
-//     $('.modal').show();
-// }
-
-// const hideModal = function(event){
-//     event.preventDefault();
-//     $('.modal').hide();
-// }
-
-// $('.modal').on('click', showModal);
-// $('.close').on('click', hideModal);
-

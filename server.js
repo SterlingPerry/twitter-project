@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 
-mongoose.connect('mongodb://localhost/twitter', { useNewUrlParser: true });
+mongoose.connect('mongodb://codekings:grace4ever@ds241723.mlab.com:41723/heroku_n4m0vwkt', { useNewUrlParser: true });
 
 
 require('./routes/api-routes')(app);
